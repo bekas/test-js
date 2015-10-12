@@ -1,7 +1,3 @@
-var msg = 'hello, world!';
-console.log(msg);
-
-
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
