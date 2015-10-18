@@ -5,11 +5,11 @@
 	"configurations": [
 		{
 			// Name of configuration; appears in the launch configuration drop down menu.
-			"name": "Launch ./bin/www",
+			"name": "Launch types",
 			// Type of configuration. Possible values: "node", "mono".
 			"type": "node",
 			// Workspace relative or absolute path to the program.
-			"program": "./node-example/bin/www",
+			"program": "./test-js/types.js",
 			// Automatically stop program after launch.
 			"stopOnEntry": false,
 			// Command line arguments passed to the program.
@@ -31,11 +31,11 @@
 		},
 		{
 			// Name of configuration; appears in the launch configuration drop down menu.
-			"name": "Launch test",
+			"name": "Launch operations",
 			// Type of configuration. Possible values: "node", "mono".
 			"type": "node",
 			// Workspace relative or absolute path to the program.
-			"program": "./node-example/test.js",
+			"program": "./test-js/operations.js",
 			// Automatically stop program after launch.
 			"stopOnEntry": false,
 			// Command line arguments passed to the program.
@@ -57,11 +57,11 @@
 		},
 		{
 			// Name of configuration; appears in the launch configuration drop down menu.
-			"name": "Launch test es2015",
+			"name": "Launch operators",
 			// Type of configuration. Possible values: "node", "mono".
 			"type": "node",
 			// Workspace relative or absolute path to the program.
-			"program": "./node-example/test-es2015.js",
+			"program": "./test-js/operators.js",
 			// Automatically stop program after launch.
 			"stopOnEntry": false,
 			// Command line arguments passed to the program.
@@ -81,15 +81,188 @@
 			// If JavaScript source maps are enabled, the generated code is expected in this directory.
 			"outDir": null
 		},
-		
 		{
-			"name": "Attach",
+			// Name of configuration; appears in the launch configuration drop down menu.
+			"name": "Launch function",
+			// Type of configuration. Possible values: "node", "mono".
 			"type": "node",
-			// TCP/IP address. Default is "localhost".
-			"address": "localhost",
-			// Port to attach to.
-			"port": 5858,
-			"sourceMaps": false
+			// Workspace relative or absolute path to the program.
+			"program": "./test-js/function.js",
+			// Automatically stop program after launch.
+			"stopOnEntry": false,
+			// Command line arguments passed to the program.
+			"args": [],
+			// Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
+			"cwd": ".",
+			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
+			"runtimeExecutable": null,
+			// Optional arguments passed to the runtime executable.
+			"runtimeArgs": ["--nolazy"],
+			// Environment variables passed to the program.
+			"env": {
+				"NODE_ENV": "development"
+			},
+			// Use JavaScript source maps (if they exist).
+			"sourceMaps": false,
+			// If JavaScript source maps are enabled, the generated code is expected in this directory.
+			"outDir": null
+		},
+		{
+			// Name of configuration; appears in the launch configuration drop down menu.
+			"name": "Launch objects",
+			// Type of configuration. Possible values: "node", "mono".
+			"type": "node",
+			// Workspace relative or absolute path to the program.
+			"program": "./test-js/objects.js",
+			// Automatically stop program after launch.
+			"stopOnEntry": false,
+			// Command line arguments passed to the program.
+			"args": [],
+			// Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
+			"cwd": ".",
+			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
+			"runtimeExecutable": null,
+			// Optional arguments passed to the runtime executable.
+			"runtimeArgs": ["--nolazy"],
+			// Environment variables passed to the program.
+			"env": {
+				"NODE_ENV": "development"
+			},
+			// Use JavaScript source maps (if they exist).
+			"sourceMaps": false,
+			// If JavaScript source maps are enabled, the generated code is expected in this directory.
+			"outDir": null
+		},
+		{
+			// Name of configuration; appears in the launch configuration drop down menu.
+			"name": "Launch this-ctor",
+			// Type of configuration. Possible values: "node", "mono".
+			"type": "node",
+			// Workspace relative or absolute path to the program.
+			"program": "./test-js/this-ctor.js",
+			// Automatically stop program after launch.
+			"stopOnEntry": false,
+			// Command line arguments passed to the program.
+			"args": [],
+			// Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
+			"cwd": ".",
+			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
+			"runtimeExecutable": null,
+			// Optional arguments passed to the runtime executable.
+			"runtimeArgs": ["--nolazy"],
+			// Environment variables passed to the program.
+			"env": {
+				"NODE_ENV": "development"
+			},
+			// Use JavaScript source maps (if they exist).
+			"sourceMaps": false,
+			// If JavaScript source maps are enabled, the generated code is expected in this directory.
+			"outDir": null
+		},
+		{
+			// Name of configuration; appears in the launch configuration drop down menu.
+			"name": "Launch functional-oop",
+			// Type of configuration. Possible values: "node", "mono".
+			"type": "node",
+			// Workspace relative or absolute path to the program.
+			"program": "./test-js/functional-oop.js",
+			// Automatically stop program after launch.
+			"stopOnEntry": false,
+			// Command line arguments passed to the program.
+			"args": [],
+			// Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
+			"cwd": ".",
+			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
+			"runtimeExecutable": null,
+			// Optional arguments passed to the runtime executable.
+			"runtimeArgs": ["--nolazy"],
+			// Environment variables passed to the program.
+			"env": {
+				"NODE_ENV": "development"
+			},
+			// Use JavaScript source maps (if they exist).
+			"sourceMaps": false,
+			// If JavaScript source maps are enabled, the generated code is expected in this directory.
+			"outDir": null
+		},
+		{
+			// Name of configuration; appears in the launch configuration drop down menu.
+			"name": "Launch prototype-oop",
+			// Type of configuration. Possible values: "node", "mono".
+			"type": "node",
+			// Workspace relative or absolute path to the program.
+			"program": "./test-js/prototype-oop.js",
+			// Automatically stop program after launch.
+			"stopOnEntry": false,
+			// Command line arguments passed to the program.
+			"args": [],
+			// Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
+			"cwd": ".",
+			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
+			"runtimeExecutable": null,
+			// Optional arguments passed to the runtime executable.
+			"runtimeArgs": ["--nolazy"],
+			// Environment variables passed to the program.
+			"env": {
+				"NODE_ENV": "development"
+			},
+			// Use JavaScript source maps (if they exist).
+			"sourceMaps": false,
+			// If JavaScript source maps are enabled, the generated code is expected in this directory.
+			"outDir": null
+		},
+		{
+			// Name of configuration; appears in the launch configuration drop down menu.
+			"name": "Launch try-catch",
+			// Type of configuration. Possible values: "node", "mono".
+			"type": "node",
+			// Workspace relative or absolute path to the program.
+			"program": "./test-js/try-catch.js",
+			// Automatically stop program after launch.
+			"stopOnEntry": false,
+			// Command line arguments passed to the program.
+			"args": [],
+			// Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
+			"cwd": ".",
+			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
+			"runtimeExecutable": null,
+			// Optional arguments passed to the runtime executable.
+			"runtimeArgs": ["--nolazy"],
+			// Environment variables passed to the program.
+			"env": {
+				"NODE_ENV": "development"
+			},
+			// Use JavaScript source maps (if they exist).
+			"sourceMaps": false,
+			// If JavaScript source maps are enabled, the generated code is expected in this directory.
+			"outDir": null
+		},
+		{
+			// Name of configuration; appears in the launch configuration drop down menu.
+			"name": "Launch offtop",
+			// Type of configuration. Possible values: "node", "mono".
+			"type": "node",
+			// Workspace relative or absolute path to the program.
+			"program": "./test-js/offtop.js",
+			// Automatically stop program after launch.
+			"stopOnEntry": false,
+			// Command line arguments passed to the program.
+			"args": [],
+			// Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
+			"cwd": ".",
+			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
+			"runtimeExecutable": null,
+			// Optional arguments passed to the runtime executable.
+			"runtimeArgs": ["--nolazy"],
+			// Environment variables passed to the program.
+			"env": {
+				"NODE_ENV": "development"
+			},
+			// Use JavaScript source maps (if they exist).
+			"sourceMaps": false,
+			// If JavaScript source maps are enabled, the generated code is expected in this directory.
+			"outDir": null
 		}
+		
 	]
 }
