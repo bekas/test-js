@@ -1,4 +1,3 @@
-
 function Animal(speed) {
 	var self = this;
 	var name = 'animal';

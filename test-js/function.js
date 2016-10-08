@@ -4,7 +4,7 @@ var answer = 0;
 
 // Function Declaration
 function sum(x,y){
-	x = x || 1;
+	if(x === undefined) x = 1;
 	y = y || 1;
 	
 	var s = x + y;
@@ -24,9 +24,10 @@ mySum = null;
 //console.log(mySum());
 
 // Function Expression
-var comp = function(x,y){
+var comp = function(x,y){  
 	return x*y;
-}
+};
+
 console.log(comp(3,4));
 
 
@@ -55,6 +56,7 @@ function sumN(){
 	for(var i=0;i<arguments.length;i++){
 		s+=arguments[i];
 	}
+	return s;
 }
 
 function makeCounter() {
@@ -64,6 +66,7 @@ function makeCounter() {
     return currentCount++;
   };
 }
+
 
 
 var counter1 = makeCounter(); 

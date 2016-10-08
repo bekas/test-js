@@ -2,22 +2,28 @@
 var person = {name:'js-programmer'};
 
 person.hello = function(){
-	return 'hello, i`m ' + this.name; 
-	
+	return 'hello, i`m ' + this.name;  
 }
 console.log(person.hello());
 var f = person.hello;
-f();
+console.log(f());
+var bindedF = f.bind({name:'123'});
+bindedF();
+
+f.apply({name:'4'},[1,2,3]);
+f.call({name:'5'}, 1,2,3);
 
 //toString, valueOf
 //////////////////////////Ctor////////////////////////////////////
 function Person(name, age){
+  var self = this; 
 	var msg = 'hello, i`m ';
 	this.name = name;
 	this.age = age;
 	this.hello = function(){
-		return msg + this.name; 
+		return msg + self.name; 
 	}
+	
 }
 
 var p = new Person('Vasya', 20);

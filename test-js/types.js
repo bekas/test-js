@@ -1,18 +1,23 @@
 'use strict' //ES5
-
 console.log('HELLO'); //console !
 
 /////////////////////// VAR  /////////////////////////////////
 
 var foo = 'bar';
- 
+var x;
+x = 'asd';
+x = 123;
+x = true;
+x = {};
+
+
 /////////////////////// TYPES  ///////////////////////////////
 
 /* Comment */
 
-types = [ '', 0, 0==0, null, undefined, {}, function(){} ]  //;
+var types = ['', 0, 0 == 0, null, undefined, {}, function(){} ]  //;
 
-for(var i=0;i<types.length;i++ )
+for(var i=0; i<types.length; i = i + 1 )
 	console.log(typeof types[i])
 	
 var types = 'types'
@@ -21,6 +26,7 @@ var types = 'types'
 var x = 1;
 x = 1.1;
 x = NaN;
+x = 0/0;
 x = Infinity;
 x = -Infinity; 
 
@@ -41,4 +47,13 @@ y = 123;
 y = undefined;
 
 /* Object */
-var user = { name: "Вася" };
+var user = {
+  name: "Вася",
+  getName: function(){    
+    return this.name;
+  } 
+};
+        
+user.getName();
+   
+user.getName = function() { return "NO NAME" };
