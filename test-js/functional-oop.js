@@ -11,8 +11,7 @@ function Animal(speed) {
 	}
 	
 	this.run = function(){
-		console.log(runing());
-		
+		console.log(runing());		
 	}	
 }
 
@@ -22,8 +21,6 @@ function Cat(may, speed){
 	this.sayMay = function(){
 		console.log('MAY: ' + may);		
 	}
-	
-	//run
 }
 
 var cat = new Cat('may-may-maaaayyyy', 5);

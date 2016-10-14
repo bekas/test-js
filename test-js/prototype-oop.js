@@ -8,31 +8,26 @@ function Animal(speed) {
 	}
 	
 	this.run = function(){
-		console.log(runing());
-		
+		console.log(runing());		
 	}	
 }
 
-function Cat(may, speed){
+function Cat(may, speed) {
 	Animal.call(this, speed);
 	
 	this.sayMay = function(){
 		console.log('MAY: ' + may);		
 	}
-	
-	//run
 }
 
 ///////////////////////////Prototype/////////////////////////////////
 
-var animal = {run:true}
-var dog = {may:false}
 
+var dog = { };
+var animal = { say: 'RRrrrrr...' }
+console.log( dog.say );
 dog.__proto__ = animal;
-
-console.log(dog.run);
-
-//hasOwnProperty
+console.log( dog.say );
 
 var obj = Object.create(null);
 
@@ -44,8 +39,9 @@ function Dog(gav){
 Dog.prototype = new Animal(10);
 Dog.prototype.constructor = Dog;
 
-(new Dog('gav')).sayGav();
-(new Dog('gav')).run();
+var dog2 = new Dog('Gavv-gavvvv');
+dog2.sayGav();
+dog2.run();
 
 function ProtoAnimal(speed) {
 	var self = this;
@@ -82,4 +78,3 @@ ProtoCat.prototype.run = function(){
 cat.run();
 
 var catIsAnimal = cat instanceof ProtoCat && cat instanceof ProtoAnimal;
-//mixin

@@ -7,13 +7,13 @@ person.hello = function(){
 console.log(person.hello());
 var f = person.hello;
 console.log(f());
-var bindedF = f.bind({name:'123'});
+
+var bindedF = f.bind({name:'bind'});
 bindedF();
 
-f.apply({name:'4'},[1,2,3]);
-f.call({name:'5'}, 1,2,3);
+f.apply({name:'apply'}, [1, 2, 3]);
+f.call({name:'call'}, 1, 2, 3);
 
-//toString, valueOf
 //////////////////////////Ctor////////////////////////////////////
 function Person(name, age){
   var self = this; 
@@ -23,35 +23,30 @@ function Person(name, age){
 	this.hello = function(){
 		return msg + self.name; 
 	}
-	
 }
 
 var p = new Person('Vasya', 20);
 console.log(p.hello());
 
-//return
-
 Object.defineProperty(p, "description", {
 
   get: function() {
-    return this.name + ' ' + this.age;
+    return 'Name: ' + this.name + ', age: ' + this.age;
   },
 
   set: function(value) {
       var split = value.split(' ');
-      this.name = split[0];
-      this.age = +split[1];
+      this.name = split[1];
+      this.age = +split[3];
     }
 });
 
-//через имя свойства
 
-Person.description = 'this is person obj';
+Person.description = 'Name: Ivan, age: 25';
 
-console.log(p.hello.call({name:'A'}));
-console.log(p.hello.apply({name:'A'}));
+console.log(p.hello.call({name:'Name-by-call'}));
+console.log(p.hello.apply({name:'Name-by-apply'}));
 
-//bind
 
 p.print = function(){
 	console.log(this.hello());	
